@@ -4,17 +4,22 @@
 # **Low-Resource Language Identification using TTS-Generated Data**  
 
 ## **Overview**  
-This project explores the use of TTS-generated speech to enhance low-resource spoken language identification (LID). The approach involves transcribing real-world speech, generating synthetic speech using TTS models, and evaluating the quality of generated audio using PESQ scores.   
+This project explores the use of TTS-generated speech to enhance low-resource spoken language identification (LID). The approach involves transcribing real-world speech, generating synthetic speech using TTS models, and evaluating the quality of generated audio using PESQ scores. Additionally, human-generated and TTS-generated speech are analyzed using three LID models—EPACA, EPACATDNN, and Wave2Vec—to evaluate the effectiveness of TTS models based on accuracy, F1-score, and other LID performance metrics.   
 
 ## **Workflow**  
 1. **Transcription:** 150 Speech data of English, Hindi and Chinese from [VoxLingua107](https://cs.taltech.ee/staff/tanel.alumae/data/voxlingua107/) is transcribed using Whisper AI.  
 2. **TTS Generation:** Transcriptions are converted to speech using multiple TTS models.  
-3. **Evaluation:** PESQ scores are calculated to compare the quality of original and generated speech.  
+3. **Evaluation:** PESQ scores are calculated to compare the quality of original and generated speech.
+4. **LID Model Testing:** Three LID models—EPACA, EPACATDNN, and Wave2Vec—are used to classify human-generated and TTS-generated speech.
+5. **Performance Metrics Calculation:** Accuracy, F1-score, Cavg, and Equal Error Rate (EER) are computed for each language and TTS model using LID models.
+6. **Analysis & Comparison:** Results are compiled into spreadsheets to review model performance and speech variations. 
 
 ## **Models & Tools Used**  
 - **Speech Transcription:** Whisper AI  
 - **TTS Models:** Generates speech from transcriptions using Tacotron2, XTTS, and RainyEdge2 
 - **Evaluation:** PESQ Score for objective speech quality assessment
+- **LID Models:** EPACA, EPACATDNN, and Wave2Vec
+- **Evaluation Metrics:** PESQ for speech quality assessment, accuracy, F1-score, Cavg, and EER for LID evaluation
 
  ## **Drive Link for Audio Data & PESQ Scores**  
 📂 [Google Drive - Audio Data & PESQ Scores](https://drive.google.com/drive/folders/1t9bLSbJXKImJqzgOHpy7FfpEM9PKCZ-H?usp=drive_link)  
@@ -45,6 +50,13 @@ This project explores the use of TTS-generated speech to enhance low-resource sp
     ├── 📂 Hindi/ (150 machine-generated audios)
     ├── 📂 Chinese/ (150 machine-generated audios)
     └── 📄 PESQ Scores
+📂 LID Evaluation/
+├── 📂 EPACA/
+│   ├── 📄 Accuracy, F1-score, Cavg, EER
+├── 📂 EPACATDNN/
+│   ├── 📄 Accuracy, F1-score, Cavg, EER
+└── 📂 Wave2Vec/
+    ├── 📄 Accuracy, F1-score, Cavg, EER
 ```
 
 ## **Team Members**  

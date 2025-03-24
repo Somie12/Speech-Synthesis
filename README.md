@@ -58,6 +58,9 @@ This project explores the use of TTS-generated speech to enhance low-resource sp
 └── 📂 Wave2Vec/
     ├── 📄 Accuracy, F1-score, Cavg, EER
 ```
+## **Project Documentation - Integration of TTS-Generated Multilingual Data for Low-Resource Spoken LID**  
+📄 [Project Docs - LID & TTS Evaluation](https://docs.google.com/document/d/1YiEsVMS6E0u7z5n3WI6zCeoct0bprXyZtigm95mJeQo/edit?tab=t.0)  
+
 
 ## **Team Members**  
 <p align="center">
